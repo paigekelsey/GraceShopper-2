@@ -37,14 +37,14 @@ router.put("/", async (req, res, next) => {
 router.post("/", async (req, res, next) => {
   try {
     // console.log('This is req.body in cart',req.body);
-    const {userId, productId}= req.body;
+    const {userId, productId} = req.body;
     const userOrder = await Order.findOne({
       where: {
         userId: userId,
         isComplete: false,
       }
     });
-    let cartItems= await userOrder.removeProduct(productId);
+    let cartItems = await userOrder.removeProduct(productId);
     // console.log('This is the cartItems',cartItems);
     res.json(cartItems);
   } catch (error) {
