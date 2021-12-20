@@ -1,5 +1,5 @@
 {
-  "name": "peach-studio",
+  "name": "needspace",
   "version": "2.0.0",
   "description": "A great e-commerce place to buy furniture",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "test:dev:models": "npm run test:dev -- --grep=model",
     "test:dev:routes": "npm run test:dev -- --grep=route"
   },
-  "author": "Peach Panthers",
+  "author": "Kelsey Smith",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
